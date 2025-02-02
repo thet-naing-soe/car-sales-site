@@ -38,6 +38,8 @@ body {
   padding: 2em 1.5em;
   box-shadow: 11px 18px 54px rgba(0, 0, 0, 0.11);
   border-radius: 6px;
+  clip-path: circle(0% at 100% 0%);
+  transition: clip-path 0.3s;
 }
 .chk-container:not(:last-child) {
   margin-bottom: 1.125em;
