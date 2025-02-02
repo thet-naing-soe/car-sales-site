@@ -1,15 +1,18 @@
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 :root {
-  --primary-color: #008AD8;
+  --primary-color: #008ad8;
   --text-color: #565656;
 }
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: "Lexend Deca", serif;
-    background: #F4F4F4;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", serif;
+  background: #f4f4f4;
 }
 .container {
   margin: 2.8em;
@@ -21,14 +24,30 @@ html, body {
   font-size: 1.125rem;
   color: var(--text-color);
 }
-.filter,.labels {
+.labels {
   display: none;
 }
+.option {
+  position: relative;
+}
+.filter {
+  position: absolute;
+  background: #fff;
+  right: 1em;
+  top: 3em;
+  padding: 2em 1.5em;
+  box-shadow: 11px 18px 54px rgba(0, 0, 0, 0.11);
+  border-radius: 6px;
+}
+.chk-container:not(:last-child) {
+  margin-bottom: 1.125em;
+}
+
 .search {
   border: none;
-  padding: .8em;
+  padding: 0.8em;
   border-radius: 2em;
-  background: #fff url('assets/search.svg') no-repeat right .8em center;
+  background: #fff url("assets/search.svg") no-repeat right 0.8em center;
   width: 100%;
 }
 .search:focus {
@@ -41,12 +60,14 @@ html, body {
 }
 .menu {
   cursor: pointer;
-  margin: 0 .5em;
+  margin: 0 0.5em;
 }
-.far,.fas {
+.far,
+.fas {
   cursor: pointer;
 }
-.cars,.labels {
+.cars,
+.labels {
   margin: -1em -1em 2em;
   padding: 1em;
   border-radius: 6px;
@@ -61,7 +82,7 @@ html, body {
 }
 .car-location {
   font-size: 1.125rem;
-  color: var(--text-color) ;
+  color: var(--text-color);
 }
 .cols-2 {
   display: flex;
